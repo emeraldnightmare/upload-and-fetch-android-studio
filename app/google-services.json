@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961195175681",
+    "project_id": "datafetchandstore",
+    "storage_bucket": "datafetchandstore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961195175681:android:690619c5544c6ae3bab500",
+        "android_client_info": {
+          "package_name": "com.example.datastore_and_fetch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961195175681-fi1nt5eqvotshg3finujakgk3rfqb4to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGb_19Kf5KS1qJ2C4x0iKrscWZLvjnXhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961195175681-fi1nt5eqvotshg3finujakgk3rfqb4to.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

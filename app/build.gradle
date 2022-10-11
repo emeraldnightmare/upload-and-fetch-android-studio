@@ -1,0 +1,71 @@
+
+buildscript {
+
+    repositories {
+
+        // Make sure that you have the following two repositories
+
+        google()  // Google's Maven repository
+
+        mavenCentral()  // Maven Central repository
+
+    }
+
+    dependencies {
+
+
+
+        // Add the dependency for the Google services Gradle plugin
+
+        classpath 'com.google.gms:google-services:4.3.13'
+
+    }
+
+}
+
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.example.datastore_and_fetch'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.datastore_and_fetch"
+        minSdk 22
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database:20.0.6'
+    implementation 'com.google.firebase:firebase-storage:20.0.2'
+    implementation 'com.google.firebase:firebase-firestore:24.3.1'
+    testImplementation 'junit:junit:4.13.2'
+
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
